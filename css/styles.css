@@ -1,7 +1,11 @@
 *{
   font-family: 'PT Sans', sans-serif;
 }
+
+/* HEADER */
 header {
+  position: fixed;
+  width: 100%;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -9,6 +13,7 @@ header {
   border: 1px solid black;
   height: 64px;
   box-sizing: border-box;
+  background-color: #fff;
 }
 
 .header {
@@ -41,6 +46,7 @@ header {
   border: 0;
 }
 
+/* NAV */
 .nav {
   flex-grow: 6;
   flex-flow: row nowrap;
@@ -56,4 +62,45 @@ header {
 
 .navmenu li a {
   text-decoration: none;
+}
+
+/* CONTENT */
+
+ .wrapper {
+   /* width: 90%;
+   display: flex;
+   align-items: flex-start;
+   padding: 0 5%;
+   flex-direction: row; */
+   width: 90%;
+   margin: 0 5%;
+   height: 1000px;
+   /* background-color: black; */
+   display: flex;
+   justify-content: space-around;
+   flex-flow: row wrap;
+   align-items: stretch;
+   padding-top: 90px;
+ }
+
+ .wrapper > section {
+   max-width: 25%;
+   /* background-color: grey; */
+   /* border: 1px solid red; */
+   display: flex;
+   flex-flow: column nowrap;
+ }
+
+article {
+  margin: 10px;
+}
+
+article img{
+  width: 100%;
+  border-radius: 6px;
+
+}
+
+article i {
+  float: right;
 }
